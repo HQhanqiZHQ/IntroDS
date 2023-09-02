@@ -1,0 +1,33 @@
+---
+title: "Homework0"
+author: "Hanqi Zeng"
+format: html
+editor: visual
+execute: 
+  echo: false
+---
+
+we are showing the solutions to the following equation for $a=1, b=3, c=2$:
+
+```{r}
+a <- 1
+b <- 3
+c <- 2
+x <- seq(-5,5,0.1)
+f <- a*x^2 + b*x + c
+plot(x,f,type="l",xlab="x",ylab="f(x)")+abline(h=0,lty=2.5)
+```
+The intersection of the dashed line at $y=0$, is the solution(s) to the equation.
+
+
+```{r}
+
+sqrt_term = (b^2 - 4 * a * c)
+solutions <- "No solutions exist"
+if (sqrt_term >= 0) {
+    solutions <- c((-b + sqrt(sqrt_term)) / (2 * a),
+              (-b - sqrt(sqrt_term)) / (2 * a))
+}
+solutions
+```
+
