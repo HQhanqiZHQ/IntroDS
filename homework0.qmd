@@ -7,7 +7,7 @@ execute:
   echo: false
 ---
 
-we are showing the solutions to the following equation for $a=1, b=3, c=2$:
+We are showing the solutions to the following equation for $a=1, b=3, c=2$:
 
 ```{r}
 a <- 1
